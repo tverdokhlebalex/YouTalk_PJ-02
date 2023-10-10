@@ -1,0 +1,92 @@
+/*fronts*/
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.woff) format("woff"),
+      url(../fonts/Montserrat-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.woff) format("woff"),
+      url(../fonts/Montserrat-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.woff) format("woff"),
+      url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff) format("woff"),
+      url(../fonts/Montserrat-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /*обнуление/общие стили*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+}
+img {
+  display: block;
+  object-fit: cover;
+}
+
+  /*__Шапка__*/
+._container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px;
+  max-width: 1440px;
+  border-bottom: 1px solid #EFF5FB;
+}
+.header__logo {
+  min-width: 51px;
+}
+.header__logo-img {
+  width: 100%;
+  display: block;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+.header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 114%;
+  letter-spacing: 0.25px;
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+}
+.header__bth {
+  border-radius: 4px;
+  background: #E3F5F5;
+  color: #03B2A5;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
