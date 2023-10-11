@@ -1,32 +1,28 @@
 /*fronts*/
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Bold.woff) format("woff"),
-      url(../fonts/Montserrat-Bold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Medium.woff) format("woff"),
-      url(../fonts/Montserrat-Medium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-SemiBold.woff) format("woff"),
-      url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Regular.woff) format("woff"),
-      url(../fonts/Montserrat-Regular.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
   
   /*обнуление/общие стили*/
 * {
@@ -80,7 +76,7 @@ img {
   text-decoration: none;
   position: relative;
 }
-.header__bth {
+.header__btn {
   border-radius: 4px;
   background: #E3F5F5;
   color: #03B2A5;
@@ -89,4 +85,139 @@ img {
   font-weight: 700;
   border: none;
   cursor: pointer;
+}
+.header__burger {
+  display: none;
+}
+/* Style main */
+.main {
+  position: relative;
+  padding: 16px 120px 30px 120px;
+}
+.main::before {
+  background-image: url(../images/blog-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 401px;
+  left: 0;
+  height: 31%;
+  background-size: cover;
+  z-index: -1;
+}
+.attahments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.attahments__text {
+  text-decoration: none;
+  text-align: center;
+  color: #333333B2;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+.attachments__arrow {
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.main__title {
+  margin-top: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #333333;
+}
+.filter { 
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 23px;
+}
+.filter__item {
+  border-radius: 24px;
+  border: 1px solid #C1C5CD;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 6px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px
+}
+.filter__smile {
+  display: inline-block;
+  background-image: url(../images/smile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px
+}
+.filter__link {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.filter__item-active {
+  border: 2px solid #16C8BB;
+  background: #F9FDFD;
+}
+.unicorn {
+  display: inline-block;
+  background-image: url(../images/Unicorn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px
+}
+.cards-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.cards-main__item {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.cards-main__pic {
+  position: relative;
+}
+
+.cards-main__img {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.pos-absl__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+.pos-absl__item {
+}
+.pos-absl__icon {
+}
+.unicorn {
+}
+.pos-absl__text {
 }
