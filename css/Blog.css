@@ -229,3 +229,225 @@ img {
   font-weight: 600;
   line-height: 20px;
 }
+.cards-main__content,
+.cards-other__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 16px;
+    border: 1px solid #DEDEDE;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.cards-main__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.cards-other__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333;
+  margin-bottom: 4px;
+}
+.cards-main__author,
+.cards-other__author {
+    color: #494949;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    margin-bottom: 8px;
+}
+.cards-main__text,
+.cards-other__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.cards-main__date,
+.cards-other__date {
+    color: #868686;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    margin-top: auto;
+}
+.cards__other {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.cards-other__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(33% - 24px);
+  position: relative;
+}
+
+.cards-other__img {
+  max-width: 100%;
+  max-height: 260px;
+  border: inherit;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.cards-other__content {
+  flex-grow: 1;
+}
+.cards__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 72px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 4px;
+  background: var(--primary-400, #35B3A9);
+  cursor: pointer;
+  border: none;
+  margin-bottom: 96px;
+}
+.footer {
+  background-color: #2963A3;
+  padding: 40px 0 17px;
+}
+.footer__wrapper {
+  max-width: 1440px;
+  padding: 0 120px;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  column-gap: 20px;
+}
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+}
+.footer__link {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__title {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.footer__form {
+  display: flex;
+  max-width: 384px;
+  margin-bottom: 8px;
+}
+.footer__email {
+  padding: 14px 55px 14px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(157, 157, 157, 0.20);
+  outline: none;
+  background: #FFF;
+  color: #9D9D9D;
+  font-size: 14px;
+  line-height: 20px;
+  flex-grow: 1;
+}
+.footer__btn {
+  padding: 14px 20px;
+  border-radius: 4px;
+  background: #16C8BB;
+  border: none;
+  margin-left: -5px;
+}
+.footer__btn-img {
+  display: block;
+  background-image: url(../images/sendmail.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+}
+.footer__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.25px;
+  opacity: 0.7;
+}
+.footer__social {
+  justify-self: center;
+}
+.footer__logo_wrap {
+}
+.footer__logo {
+
+}
+.footer__social-links {
+  display: flex;
+  gap: 16px;
+}
+.footer__social-link {
+  margin-top: 40px;
+  width: 32px;
+  height: 32px;
+  border-radius: 60px;
+  background-color: #EFF5FB;
+}
+.social-vk {
+  display: block;
+  background-image: url(../images/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social-tg {
+  display: block;
+  background-image: url(../images/tg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social-twt {
+  display: block;
+  background-image: url(../images/twt.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social-dzen {
+  display: block;
+  background-image: url(../images/dzen.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footer__line {
+  height: 1px;
+  background-color: #9D9D9D;
+  opacity: 0.3;
+  margin-top: 24px;
+}
+.footer__copyright {
+  display: flex;
+  gap: 48px;
+}
+.footer__copyright-link {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.7;
+}
