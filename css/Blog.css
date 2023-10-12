@@ -229,15 +229,27 @@ img {
   font-weight: 600;
   line-height: 20px;
 }
-.cards-main__content,
+.cards-main__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 16px;
+  max-width: 588px;
+  max-height: 240px;
+  border: 1px solid #DEDEDE;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
 .cards-other__content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 16px;
-    border: 1px solid #DEDEDE;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 16px;
+  max-width: 384px;
+  border: 1px solid #DEDEDE;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .cards-main__title {
   font-size: 18px;
@@ -254,25 +266,28 @@ img {
 }
 .cards-main__author,
 .cards-other__author {
-    color: #494949;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    margin-bottom: 8px;
+  color: #494949;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  margin-bottom: 8px;
 }
 .cards-main__text,
 .cards-other__text {
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
+  color: var(--text-primary, #333);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .cards-main__date,
 .cards-other__date {
-    color: #868686;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    margin-top: auto;
+  color: #868686;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  margin-top: auto;
 }
 .cards__other {
   margin-top: 23px;
@@ -315,6 +330,7 @@ img {
   border: none;
   margin-bottom: 96px;
 }
+/* Style footer */
 .footer {
   background-color: #2963A3;
   padding: 40px 0 17px;
@@ -392,11 +408,6 @@ img {
 .footer__social {
   justify-self: center;
 }
-.footer__logo_wrap {
-}
-.footer__logo {
-
-}
 .footer__social-links {
   display: flex;
   gap: 16px;
@@ -450,4 +461,146 @@ img {
   font-weight: 400;
   line-height: 20px;
   opacity: 0.7;
+}
+/*adaptive*/
+@media (max-width: 1024px) {
+.header {
+  padding: 20px 35px;
+}
+.header__nav {
+  margin-right: 20px;
+}
+.header__lists {
+  gap: 16px;
+}
+.header__link:last-child {
+  margin-left: 8px;
+}
+.main {
+  padding: 16px 32px 0 32px;
+}
+.filter {
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.filter__item {
+  margin: 0 8px 8px 0;
+}
+.footer__wrapper {
+  padding: 0 32px;
+}
+.cards__btn {
+  margin-bottom: 60px;
+}
+.cards-main__img {
+  max-width: 100%;
+}
+}
+@media (max-width: 768px) {
+.header {
+  padding: 20px;
+}
+.header__nav,
+.header__btn {
+  display: none;
+}
+
+.header__burger {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+
+.header__burger-line {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #03B2A5;
+}
+
+.header__burger-line::before,
+.header__burger-line::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #03B2A5;
+}
+.header__burger-line::before {
+  top: -6px;
+}
+
+.header__burger-line::after {
+  top: 6px;
+}
+.main {
+  padding: 16px 20px 0 20px;
+}
+.cards-main {
+  flex-wrap: wrap;
+}
+.cards-main__img {
+  min-width: 100%;
+}
+.cards-main__item {
+  width: 100%;
+}
+.cards-other__item {
+  width: calc(50% - 12px);
+}
+
+.cards__btn {
+  margin-bottom: 55px;
+}
+.footer__content {
+  grid-template-columns: 1fr 1.2fr;
+  row-gap: 24px;
+}
+.footer__social {
+  justify-self: start;
+}
+.footer__wrapper {
+  padding: 0 20px;
+}
+}
+@media (max-width: 414px) {
+.header {
+  padding: 19px 24px;
+}
+.filter {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-top: 24px;
+  padding-bottom: 10px;
+}
+.filter__item {
+  display: inline-block;
+}
+.cards-other__item {
+  width: 100%;
+}
+.footer__content {
+  grid-template-columns: 1fr;
+}
+.footer__copyright {
+  flex-direction: column;
+  gap: 0;
+}
+}
+@media (max-width: 320px) {
+.header {
+  padding: 11px 16px;
+}
+.main {
+  padding: 0 16px;
+}
+.footer__btn {
+  display: none;
+}
 }
