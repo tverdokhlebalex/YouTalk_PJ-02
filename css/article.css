@@ -1,0 +1,216 @@
+/*fronts*/
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+    
+    /*обнуление/общие стили*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  }
+img {
+  display: block;
+  object-fit: cover;
+}
+  
+    /*__Шапка__*/
+._container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px;
+  max-width: 1440px;
+  border-bottom: 1px solid #EFF5FB;
+}
+.header__logo {
+  min-width: 51px;
+}
+.header__logo-img {
+  width: 100%;
+  display: block;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  }
+.header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 114%;
+  letter-spacing: 0.25px;
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+}
+.header__btn {
+  border-radius: 4px;
+  background: #E3F5F5;
+  color: #03B2A5;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.header__burger {
+  display: none;
+}
+  /* Style main */
+.main {
+  position: relative;
+  padding: 16px 120px 30px 120px;
+}
+.attahments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.attahments__text {
+  text-decoration: none;
+  text-align: center;
+  color: #333333B2;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+.attachments__arrow {
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.article {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.article__content {
+  max-width: 690px;
+}
+.article__title {
+  overflow: hidden;
+  color: var(--text-primary, #333);
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 54px;
+}
+.article__author-date {
+  color: #494949;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 20px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+}
+.article__card-title {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.article__card-lists {
+  padding-left: 24px;
+  margin-top: 16px;
+  color: #03B2A5;
+}
+.article__card-link,
+.article__card-sup-link {
+  color: #333;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+}
+.article__card-item {
+  margin-top: 8px;
+}
+.article__card-sup-item {
+  margin-left: 32px;
+  margin-top: 4px;
+}
+.article__card-text {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.article__quote-text::after {
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 36px;
+  top: 24px;
+  left: 24px;
+  background: url(../images/quotation.png) center/cover no-repeat;
+
+}
+.article__quote {
+  border-radius: 16px;
+  background: var(--blue-b-80, #F3F7FE);
+  padding: 24px;
+  position: relative;
+}
+.article__quote-text {
+  color: var(--text-primary, #333);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.article__quote-author {
+  color: var(--text-primary, #333);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
